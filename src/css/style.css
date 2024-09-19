@@ -64,3 +64,49 @@ img {
 [data-control='slide'] li.active a, [data-control='slide'] li a:hover{
   background-color: #e54;
 }
+
+.custon-controls{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.custon-controls li{
+  opacity: .8;
+  transform: scale(.8);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2px ;
+  box-shadow: 0 2px 2px rgba(0,0,0,.5);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.custon-controls li.active{
+  opacity: 1;
+  transform: scale(1);
+}
+
+.arrow-nav{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.arrow-nav button{
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 11px;
+  background: rgb(255, 171, 4) url('../img/arrow.svg') center center no-repeat;
+}
+
+.arrow-nav button.prev{
+  transform: rotate(-180deg);
+}
